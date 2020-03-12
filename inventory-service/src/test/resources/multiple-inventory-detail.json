@@ -1,0 +1,42 @@
+[
+	{
+		"storeId": 1000,
+		"itemId": 1,
+		"quantity": 25
+	},
+	{
+		"storeId": 1000,
+		"itemId": 2,
+		"quantity": 15
+	},
+	{
+		"storeId": 1000,
+		"itemId": 3,
+		"quantity": 5
+	},
+	{
+		"storeId": 1001,
+		"itemId": 1,
+		"quantity": 25
+	},
+	{
+		"storeId": 1001,
+		"itemId": 2,
+		"quantity": 15
+	},
+	{
+		"storeId": 1001,
+		"itemId": 3,
+		"quantity": 5
+	},
+	{
+		"storeId": 1002,
+		"itemId": 1,
+		"quantity": 25
+	},
+	{
+		"storeId": 1002,
+		"itemId": 2,
+		"quantity": 15
+	}
+]

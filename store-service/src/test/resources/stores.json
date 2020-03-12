@@ -1,0 +1,48 @@
+[
+	{
+		"storeId": 1000,
+		"regionId": 100,
+		"dateOpened": "2010-03-11",
+		"dateClosed": "2015-04-23"
+	},
+	{
+		"storeId": 1001,
+		"regionId": 100,
+		"dateOpened": "2011-04-21"
+	},
+	{
+		"storeId": 1002,
+		"regionId": 100,
+		"dateOpened": "2013-05-13"
+	},
+	{
+		"storeId": 1003,
+		"regionId": 200,
+		"dateOpened": "2010-02-30"
+	},
+	{
+		"storeId": 1004,
+		"regionId": 200,
+		"dateOpened": "2014-07-25"
+	},
+	{
+		"storeId": 1005,
+		"regionId": 300,
+		"dateOpened": "2015-03-17"
+	},
+	{
+		"storeId": 1006,
+		"regionId": 300,
+		"dateOpened": "2016-09-12"
+	},
+	{
+		"storeId": 1007,
+		"regionId": 300,
+		"dateOpened": "2017-10-04"
+	},
+	{
+		"storeId": 1008,
+		"regionId": 300,
+		"dateOpened": "2018-12-06"
+	}
+]

@@ -33,8 +33,10 @@ public class ItemService {
 		Item existingItem = get(id);
 
 		// This seems strange.  should be a better way to update an existing entity...
-		existingItem.setName(item.getName());
+		existingItem.setBrandName(item.getBrandName());
+		existingItem.setType(item.getType());
 		existingItem.setDescription(item.getDescription());
+		existingItem.setGender(item.getGender());
 		existingItem.setColor(item.getColor());
 		existingItem.setSize(item.getSize());
 

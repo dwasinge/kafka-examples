@@ -1,0 +1,1154 @@
+[
+	{
+		"brandName": "Hanes",
+		"type": "tshirt",
+		"description": "short-sleeve",
+		"gender": "male",
+		"size": "small",
+		"color": "white"
+	},
+	{
+		"brandName": "Hanes",
+		"type": "tshirt",
+		"description": "short-sleeve",
+		"gender": "male",
+		"size": "medium",
+		"color": "white"
+	},
+	{
+		"brandName": "Hanes",
+		"type": "tshirt",
+		"description": "short-sleeve",
+		"gender": "male",
+		"size": "large",
+		"color": "white"
+	},
+	{
+		"brandName": "Hanes",
+		"type": "tshirt",
+		"description": "short-sleeve",
+		"gender": "male",
+		"size": "small",
+		"color": "black"
+	},
+	{
+		"brandName": "Hanes",
+		"type": "tshirt",
+		"description": "short-sleeve",
+		"gender": "male",
+		"size": "medium",
+		"color": "black"
+	},
+	{
+		"brandName": "Hanes",
+		"type": "tshirt",
+		"description": "short-sleeve",
+		"gender": "male",
+		"size": "large",
+		"color": "black"
+	},
+	{
+		"brandName": "Hanes",
+		"type": "tshirt",
+		"description": "short-sleeve",
+		"gender": "male",
+		"size": "small",
+		"color": "gray"
+	},
+	{
+		"brandName": "Hanes",
+		"type": "tshirt",
+		"description": "short-sleeve",
+		"gender": "male",
+		"size": "medium",
+		"color": "gray"
+	},
+	{
+		"brandName": "Hanes",
+		"type": "tshirt",
+		"description": "short-sleeve",
+		"gender": "male",
+		"size": "large",
+		"color": "gray"
+	},
+	{
+		"brandName": "Hanes",
+		"type": "tshirt",
+		"description": "long-sleeve",
+		"gender": "male",
+		"size": "small",
+		"color": "white"
+	},
+	{
+		"brandName": "Hanes",
+		"type": "tshirt",
+		"description": "long-sleeve",
+		"gender": "male",
+		"size": "medium",
+		"color": "white"
+	},
+	{
+		"brandName": "Hanes",
+		"type": "tshirt",
+		"description": "long-sleeve",
+		"gender": "male",
+		"size": "large",
+		"color": "white"
+	},
+	{
+		"brandName": "Hanes",
+		"type": "tshirt",
+		"description": "long-sleeve",
+		"gender": "male",
+		"size": "small",
+		"color": "black"
+	},
+	{
+		"brandName": "Hanes",
+		"type": "tshirt",
+		"description": "long-sleeve",
+		"gender": "male",
+		"size": "medium",
+		"color": "black"
+	},
+	{
+		"brandName": "Hanes",
+		"type": "tshirt",
+		"description": "long-sleeve",
+		"gender": "male",
+		"size": "large",
+		"color": "black"
+	},
+	{
+		"brandName": "Hanes",
+		"type": "tshirt",
+		"description": "long-sleeve",
+		"gender": "male",
+		"size": "small",
+		"color": "gray"
+	},
+	{
+		"brandName": "Hanes",
+		"type": "tshirt",
+		"description": "long-sleeve",
+		"gender": "male",
+		"size": "medium",
+		"color": "gray"
+	},
+	{
+		"brandName": "Hanes",
+		"type": "tshirt",
+		"description": "long-sleeve",
+		"gender": "male",
+		"size": "large",
+		"color": "gray"
+	},
+	{
+		"brandName": "Hanes",
+		"type": "tshirt",
+		"description": "short-sleeve",
+		"gender": "female",
+		"size": "small",
+		"color": "white"
+	},
+	{
+		"brandName": "Hanes",
+		"type": "tshirt",
+		"description": "short-sleeve",
+		"gender": "female",
+		"size": "medium",
+		"color": "white"
+	},
+	{
+		"brandName": "Hanes",
+		"type": "tshirt",
+		"description": "short-sleeve",
+		"gender": "female",
+		"size": "large",
+		"color": "white"
+	},
+	{
+		"brandName": "Hanes",
+		"type": "tshirt",
+		"description": "short-sleeve",
+		"gender": "female",
+		"size": "small",
+		"color": "black"
+	},
+	{
+		"brandName": "Hanes",
+		"type": "tshirt",
+		"description": "short-sleeve",
+		"gender": "female",
+		"size": "medium",
+		"color": "black"
+	},
+	{
+		"brandName": "Hanes",
+		"type": "tshirt",
+		"description": "short-sleeve",
+		"gender": "female",
+		"size": "large",
+		"color": "black"
+	},
+	{
+		"brandName": "Hanes",
+		"type": "tshirt",
+		"description": "short-sleeve",
+		"gender": "female",
+		"size": "small",
+		"color": "gray"
+	},
+	{
+		"brandName": "Hanes",
+		"type": "tshirt",
+		"description": "short-sleeve",
+		"gender": "female",
+		"size": "medium",
+		"color": "gray"
+	},
+	{
+		"brandName": "Hanes",
+		"type": "tshirt",
+		"description": "short-sleeve",
+		"gender": "female",
+		"size": "large",
+		"color": "gray"
+	},
+	{
+		"brandName": "Hanes",
+		"type": "tshirt",
+		"description": "long-sleeve",
+		"gender": "female",
+		"size": "small",
+		"color": "white"
+	},
+	{
+		"brandName": "Hanes",
+		"type": "tshirt",
+		"description": "long-sleeve",
+		"gender": "female",
+		"size": "medium",
+		"color": "white"
+	},
+	{
+		"brandName": "Hanes",
+		"type": "tshirt",
+		"description": "long-sleeve",
+		"gender": "female",
+		"size": "large",
+		"color": "white"
+	},
+	{
+		"brandName": "Hanes",
+		"type": "tshirt",
+		"description": "long-sleeve",
+		"gender": "female",
+		"size": "small",
+		"color": "black"
+	},
+	{
+		"brandName": "Hanes",
+		"type": "tshirt",
+		"description": "long-sleeve",
+		"gender": "female",
+		"size": "medium",
+		"color": "black"
+	},
+	{
+		"brandName": "Hanes",
+		"type": "tshirt",
+		"description": "long-sleeve",
+		"gender": "female",
+		"size": "large",
+		"color": "black"
+	},
+	{
+		"brandName": "Hanes",
+		"type": "tshirt",
+		"description": "long-sleeve",
+		"gender": "female",
+		"size": "small",
+		"color": "gray"
+	},
+	{
+		"brandName": "Hanes",
+		"type": "tshirt",
+		"description": "long-sleeve",
+		"gender": "female",
+		"size": "medium",
+		"color": "gray"
+	},
+	{
+		"brandName": "Hanes",
+		"type": "tshirt",
+		"description": "long-sleeve",
+		"gender": "female",
+		"size": "large",
+		"color": "gray"
+	},
+	{
+		"brandName": "Levi Strauss & Co",
+		"type": "tshirt",
+		"description": "short-sleeve",
+		"gender": "male",
+		"size": "small",
+		"color": "white"
+	},
+	{
+		"brandName": "Levi Strauss & Co",
+		"type": "tshirt",
+		"description": "short-sleeve",
+		"gender": "male",
+		"size": "medium",
+		"color": "white"
+	},
+	{
+		"brandName": "Levi Strauss & Co",
+		"type": "tshirt",
+		"description": "short-sleeve",
+		"gender": "male",
+		"size": "large",
+		"color": "white"
+	},
+	{
+		"brandName": "Levi Strauss & Co",
+		"type": "tshirt",
+		"description": "short-sleeve",
+		"gender": "male",
+		"size": "small",
+		"color": "black"
+	},
+	{
+		"brandName": "Levi Strauss & Co",
+		"type": "tshirt",
+		"description": "short-sleeve",
+		"gender": "male",
+		"size": "medium",
+		"color": "black"
+	},
+	{
+		"brandName": "Levi Strauss & Co",
+		"type": "tshirt",
+		"description": "short-sleeve",
+		"gender": "male",
+		"size": "large",
+		"color": "black"
+	},
+	{
+		"brandName": "Levi Strauss & Co",
+		"type": "tshirt",
+		"description": "short-sleeve",
+		"gender": "male",
+		"size": "small",
+		"color": "gray"
+	},
+	{
+		"brandName": "Levi Strauss & Co",
+		"type": "tshirt",
+		"description": "short-sleeve",
+		"gender": "male",
+		"size": "medium",
+		"color": "gray"
+	},
+	{
+		"brandName": "Levi Strauss & Co",
+		"type": "tshirt",
+		"description": "short-sleeve",
+		"gender": "male",
+		"size": "large",
+		"color": "gray"
+	},
+	{
+		"brandName": "Levi Strauss & Co",
+		"type": "tshirt",
+		"description": "long-sleeve",
+		"gender": "male",
+		"size": "small",
+		"color": "white"
+	},
+	{
+		"brandName": "Levi Strauss & Co",
+		"type": "tshirt",
+		"description": "long-sleeve",
+		"gender": "male",
+		"size": "medium",
+		"color": "white"
+	},
+	{
+		"brandName": "Levi Strauss & Co",
+		"type": "tshirt",
+		"description": "long-sleeve",
+		"gender": "male",
+		"size": "large",
+		"color": "white"
+	},
+	{
+		"brandName": "Levi Strauss & Co",
+		"type": "tshirt",
+		"description": "long-sleeve",
+		"gender": "male",
+		"size": "small",
+		"color": "black"
+	},
+	{
+		"brandName": "Levi Strauss & Co",
+		"type": "tshirt",
+		"description": "long-sleeve",
+		"gender": "male",
+		"size": "medium",
+		"color": "black"
+	},
+	{
+		"brandName": "Levi Strauss & Co",
+		"type": "tshirt",
+		"description": "long-sleeve",
+		"gender": "male",
+		"size": "large",
+		"color": "black"
+	},
+	{
+		"brandName": "Levi Strauss & Co",
+		"type": "tshirt",
+		"description": "long-sleeve",
+		"gender": "male",
+		"size": "small",
+		"color": "gray"
+	},
+	{
+		"brandName": "Levi Strauss & Co",
+		"type": "tshirt",
+		"description": "long-sleeve",
+		"gender": "male",
+		"size": "medium",
+		"color": "gray"
+	},
+	{
+		"brandName": "Levi Strauss & Co",
+		"type": "tshirt",
+		"description": "long-sleeve",
+		"gender": "male",
+		"size": "large",
+		"color": "gray"
+	},
+	{
+		"brandName": "Levi Strauss & Co",
+		"type": "tshirt",
+		"description": "short-sleeve",
+		"gender": "female",
+		"size": "small",
+		"color": "white"
+	},
+	{
+		"brandName": "Levi Strauss & Co",
+		"type": "tshirt",
+		"description": "short-sleeve",
+		"gender": "female",
+		"size": "medium",
+		"color": "white"
+	},
+	{
+		"brandName": "Levi Strauss & Co",
+		"type": "tshirt",
+		"description": "short-sleeve",
+		"gender": "female",
+		"size": "large",
+		"color": "white"
+	},
+	{
+		"brandName": "Levi Strauss & Co",
+		"type": "tshirt",
+		"description": "short-sleeve",
+		"gender": "female",
+		"size": "small",
+		"color": "black"
+	},
+	{
+		"brandName": "Levi Strauss & Co",
+		"type": "tshirt",
+		"description": "short-sleeve",
+		"gender": "female",
+		"size": "medium",
+		"color": "black"
+	},
+	{
+		"brandName": "Levi Strauss & Co",
+		"type": "tshirt",
+		"description": "short-sleeve",
+		"gender": "female",
+		"size": "large",
+		"color": "black"
+	},
+	{
+		"brandName": "Levi Strauss & Co",
+		"type": "tshirt",
+		"description": "short-sleeve",
+		"gender": "female",
+		"size": "small",
+		"color": "gray"
+	},
+	{
+		"brandName": "Levi Strauss & Co",
+		"type": "tshirt",
+		"description": "short-sleeve",
+		"gender": "female",
+		"size": "medium",
+		"color": "gray"
+	},
+	{
+		"brandName": "Levi Strauss & Co",
+		"type": "tshirt",
+		"description": "short-sleeve",
+		"gender": "female",
+		"size": "large",
+		"color": "gray"
+	},
+	{
+		"brandName": "Levi Strauss & Co",
+		"type": "tshirt",
+		"description": "long-sleeve",
+		"gender": "female",
+		"size": "small",
+		"color": "white"
+	},
+	{
+		"brandName": "Levi Strauss & Co",
+		"type": "tshirt",
+		"description": "long-sleeve",
+		"gender": "female",
+		"size": "medium",
+		"color": "white"
+	},
+	{
+		"brandName": "Levi Strauss & Co",
+		"type": "tshirt",
+		"description": "long-sleeve",
+		"gender": "female",
+		"size": "large",
+		"color": "white"
+	},
+	{
+		"brandName": "Levi Strauss & Co",
+		"type": "tshirt",
+		"description": "long-sleeve",
+		"gender": "female",
+		"size": "small",
+		"color": "black"
+	},
+	{
+		"brandName": "Levi Strauss & Co",
+		"type": "tshirt",
+		"description": "long-sleeve",
+		"gender": "female",
+		"size": "medium",
+		"color": "black"
+	},
+	{
+		"brandName": "Levi Strauss & Co",
+		"type": "tshirt",
+		"description": "long-sleeve",
+		"gender": "female",
+		"size": "large",
+		"color": "black"
+	},
+	{
+		"brandName": "Levi Strauss & Co",
+		"type": "tshirt",
+		"description": "long-sleeve",
+		"gender": "female",
+		"size": "small",
+		"color": "gray"
+	},
+	{
+		"brandName": "Levi Strauss & Co",
+		"type": "tshirt",
+		"description": "long-sleeve",
+		"gender": "female",
+		"size": "medium",
+		"color": "gray"
+	},
+	{
+		"brandName": "Levi Strauss & Co",
+		"type": "tshirt",
+		"description": "long-sleeve",
+		"gender": "female",
+		"size": "large",
+		"color": "gray"
+	},
+	{
+		"brandName": "Adidas",
+		"type": "tshirt",
+		"description": "short-sleeve",
+		"gender": "male",
+		"size": "small",
+		"color": "white"
+	},
+	{
+		"brandName": "Adidas",
+		"type": "tshirt",
+		"description": "short-sleeve",
+		"gender": "male",
+		"size": "medium",
+		"color": "white"
+	},
+	{
+		"brandName": "Adidas",
+		"type": "tshirt",
+		"description": "short-sleeve",
+		"gender": "male",
+		"size": "large",
+		"color": "white"
+	},
+	{
+		"brandName": "Adidas",
+		"type": "tshirt",
+		"description": "short-sleeve",
+		"gender": "male",
+		"size": "small",
+		"color": "black"
+	},
+	{
+		"brandName": "Adidas",
+		"type": "tshirt",
+		"description": "short-sleeve",
+		"gender": "male",
+		"size": "medium",
+		"color": "black"
+	},
+	{
+		"brandName": "Adidas",
+		"type": "tshirt",
+		"description": "short-sleeve",
+		"gender": "male",
+		"size": "large",
+		"color": "black"
+	},
+	{
+		"brandName": "Adidas",
+		"type": "tshirt",
+		"description": "short-sleeve",
+		"gender": "male",
+		"size": "small",
+		"color": "gray"
+	},
+	{
+		"brandName": "Adidas",
+		"type": "tshirt",
+		"description": "short-sleeve",
+		"gender": "male",
+		"size": "medium",
+		"color": "gray"
+	},
+	{
+		"brandName": "Adidas",
+		"type": "tshirt",
+		"description": "short-sleeve",
+		"gender": "male",
+		"size": "large",
+		"color": "gray"
+	},
+	{
+		"brandName": "Adidas",
+		"type": "tshirt",
+		"description": "long-sleeve",
+		"gender": "male",
+		"size": "small",
+		"color": "white"
+	},
+	{
+		"brandName": "Adidas",
+		"type": "tshirt",
+		"description": "long-sleeve",
+		"gender": "male",
+		"size": "medium",
+		"color": "white"
+	},
+	{
+		"brandName": "Adidas",
+		"type": "tshirt",
+		"description": "long-sleeve",
+		"gender": "male",
+		"size": "large",
+		"color": "white"
+	},
+	{
+		"brandName": "Adidas",
+		"type": "tshirt",
+		"description": "long-sleeve",
+		"gender": "male",
+		"size": "small",
+		"color": "black"
+	},
+	{
+		"brandName": "Adidas",
+		"type": "tshirt",
+		"description": "long-sleeve",
+		"gender": "male",
+		"size": "medium",
+		"color": "black"
+	},
+	{
+		"brandName": "Adidas",
+		"type": "tshirt",
+		"description": "long-sleeve",
+		"gender": "male",
+		"size": "large",
+		"color": "black"
+	},
+	{
+		"brandName": "Adidas",
+		"type": "tshirt",
+		"description": "long-sleeve",
+		"gender": "male",
+		"size": "small",
+		"color": "gray"
+	},
+	{
+		"brandName": "Adidas",
+		"type": "tshirt",
+		"description": "long-sleeve",
+		"gender": "male",
+		"size": "medium",
+		"color": "gray"
+	},
+	{
+		"brandName": "Adidas",
+		"type": "tshirt",
+		"description": "long-sleeve",
+		"gender": "male",
+		"size": "large",
+		"color": "gray"
+	},
+	{
+		"brandName": "Adidas",
+		"type": "tshirt",
+		"description": "short-sleeve",
+		"gender": "female",
+		"size": "small",
+		"color": "white"
+	},
+	{
+		"brandName": "Adidas",
+		"type": "tshirt",
+		"description": "short-sleeve",
+		"gender": "female",
+		"size": "medium",
+		"color": "white"
+	},
+	{
+		"brandName": "Adidas",
+		"type": "tshirt",
+		"description": "short-sleeve",
+		"gender": "female",
+		"size": "large",
+		"color": "white"
+	},
+	{
+		"brandName": "Adidas",
+		"type": "tshirt",
+		"description": "short-sleeve",
+		"gender": "female",
+		"size": "small",
+		"color": "black"
+	},
+	{
+		"brandName": "Adidas",
+		"type": "tshirt",
+		"description": "short-sleeve",
+		"gender": "female",
+		"size": "medium",
+		"color": "black"
+	},
+	{
+		"brandName": "Adidas",
+		"type": "tshirt",
+		"description": "short-sleeve",
+		"gender": "female",
+		"size": "large",
+		"color": "black"
+	},
+	{
+		"brandName": "Adidas",
+		"type": "tshirt",
+		"description": "short-sleeve",
+		"gender": "female",
+		"size": "small",
+		"color": "gray"
+	},
+	{
+		"brandName": "Adidas",
+		"type": "tshirt",
+		"description": "short-sleeve",
+		"gender": "female",
+		"size": "medium",
+		"color": "gray"
+	},
+	{
+		"brandName": "Adidas",
+		"type": "tshirt",
+		"description": "short-sleeve",
+		"gender": "female",
+		"size": "large",
+		"color": "gray"
+	},
+	{
+		"brandName": "Adidas",
+		"type": "tshirt",
+		"description": "long-sleeve",
+		"gender": "female",
+		"size": "small",
+		"color": "white"
+	},
+	{
+		"brandName": "Adidas",
+		"type": "tshirt",
+		"description": "long-sleeve",
+		"gender": "female",
+		"size": "medium",
+		"color": "white"
+	},
+	{
+		"brandName": "Adidas",
+		"type": "tshirt",
+		"description": "long-sleeve",
+		"gender": "female",
+		"size": "large",
+		"color": "white"
+	},
+	{
+		"brandName": "Adidas",
+		"type": "tshirt",
+		"description": "long-sleeve",
+		"gender": "female",
+		"size": "small",
+		"color": "black"
+	},
+	{
+		"brandName": "Adidas",
+		"type": "tshirt",
+		"description": "long-sleeve",
+		"gender": "female",
+		"size": "medium",
+		"color": "black"
+	},
+	{
+		"brandName": "Adidas",
+		"type": "tshirt",
+		"description": "long-sleeve",
+		"gender": "female",
+		"size": "large",
+		"color": "black"
+	},
+	{
+		"brandName": "Adidas",
+		"type": "tshirt",
+		"description": "long-sleeve",
+		"gender": "female",
+		"size": "small",
+		"color": "gray"
+	},
+	{
+		"brandName": "Adidas",
+		"type": "tshirt",
+		"description": "long-sleeve",
+		"gender": "female",
+		"size": "medium",
+		"color": "gray"
+	},
+	{
+		"brandName": "Adidas",
+		"type": "tshirt",
+		"description": "long-sleeve",
+		"gender": "female",
+		"size": "large",
+		"color": "gray"
+	},
+	{
+		"brandName": "Ralph Lauren",
+		"type": "tshirt",
+		"description": "short-sleeve",
+		"gender": "male",
+		"size": "small",
+		"color": "white"
+	},
+	{
+		"brandName": "Ralph Lauren",
+		"type": "tshirt",
+		"description": "short-sleeve",
+		"gender": "male",
+		"size": "medium",
+		"color": "white"
+	},
+	{
+		"brandName": "Ralph Lauren",
+		"type": "tshirt",
+		"description": "short-sleeve",
+		"gender": "male",
+		"size": "large",
+		"color": "white"
+	},
+	{
+		"brandName": "Ralph Lauren",
+		"type": "tshirt",
+		"description": "short-sleeve",
+		"gender": "male",
+		"size": "small",
+		"color": "black"
+	},
+	{
+		"brandName": "Ralph Lauren",
+		"type": "tshirt",
+		"description": "short-sleeve",
+		"gender": "male",
+		"size": "medium",
+		"color": "black"
+	},
+	{
+		"brandName": "Ralph Lauren",
+		"type": "tshirt",
+		"description": "short-sleeve",
+		"gender": "male",
+		"size": "large",
+		"color": "black"
+	},
+	{
+		"brandName": "Ralph Lauren",
+		"type": "tshirt",
+		"description": "short-sleeve",
+		"gender": "male",
+		"size": "small",
+		"color": "gray"
+	},
+	{
+		"brandName": "Ralph Lauren",
+		"type": "tshirt",
+		"description": "short-sleeve",
+		"gender": "male",
+		"size": "medium",
+		"color": "gray"
+	},
+	{
+		"brandName": "Ralph Lauren",
+		"type": "tshirt",
+		"description": "short-sleeve",
+		"gender": "male",
+		"size": "large",
+		"color": "gray"
+	},
+	{
+		"brandName": "Ralph Lauren",
+		"type": "tshirt",
+		"description": "long-sleeve",
+		"gender": "male",
+		"size": "small",
+		"color": "white"
+	},
+	{
+		"brandName": "Ralph Lauren",
+		"type": "tshirt",
+		"description": "long-sleeve",
+		"gender": "male",
+		"size": "medium",
+		"color": "white"
+	},
+	{
+		"brandName": "Ralph Lauren",
+		"type": "tshirt",
+		"description": "long-sleeve",
+		"gender": "male",
+		"size": "large",
+		"color": "white"
+	},
+	{
+		"brandName": "Ralph Lauren",
+		"type": "tshirt",
+		"description": "long-sleeve",
+		"gender": "male",
+		"size": "small",
+		"color": "black"
+	},
+	{
+		"brandName": "Ralph Lauren",
+		"type": "tshirt",
+		"description": "long-sleeve",
+		"gender": "male",
+		"size": "medium",
+		"color": "black"
+	},
+	{
+		"brandName": "Ralph Lauren",
+		"type": "tshirt",
+		"description": "long-sleeve",
+		"gender": "male",
+		"size": "large",
+		"color": "black"
+	},
+	{
+		"brandName": "Ralph Lauren",
+		"type": "tshirt",
+		"description": "long-sleeve",
+		"gender": "male",
+		"size": "small",
+		"color": "gray"
+	},
+	{
+		"brandName": "Ralph Lauren",
+		"type": "tshirt",
+		"description": "long-sleeve",
+		"gender": "male",
+		"size": "medium",
+		"color": "gray"
+	},
+	{
+		"brandName": "Ralph Lauren",
+		"type": "tshirt",
+		"description": "long-sleeve",
+		"gender": "male",
+		"size": "large",
+		"color": "gray"
+	},
+	{
+		"brandName": "Ralph Lauren",
+		"type": "tshirt",
+		"description": "short-sleeve",
+		"gender": "female",
+		"size": "small",
+		"color": "white"
+	},
+	{
+		"brandName": "Ralph Lauren",
+		"type": "tshirt",
+		"description": "short-sleeve",
+		"gender": "female",
+		"size": "medium",
+		"color": "white"
+	},
+	{
+		"brandName": "Ralph Lauren",
+		"type": "tshirt",
+		"description": "short-sleeve",
+		"gender": "female",
+		"size": "large",
+		"color": "white"
+	},
+	{
+		"brandName": "Ralph Lauren",
+		"type": "tshirt",
+		"description": "short-sleeve",
+		"gender": "female",
+		"size": "small",
+		"color": "black"
+	},
+	{
+		"brandName": "Ralph Lauren",
+		"type": "tshirt",
+		"description": "short-sleeve",
+		"gender": "female",
+		"size": "medium",
+		"color": "black"
+	},
+	{
+		"brandName": "Ralph Lauren",
+		"type": "tshirt",
+		"description": "short-sleeve",
+		"gender": "female",
+		"size": "large",
+		"color": "black"
+	},
+	{
+		"brandName": "Ralph Lauren",
+		"type": "tshirt",
+		"description": "short-sleeve",
+		"gender": "female",
+		"size": "small",
+		"color": "gray"
+	},
+	{
+		"brandName": "Ralph Lauren",
+		"type": "tshirt",
+		"description": "short-sleeve",
+		"gender": "female",
+		"size": "medium",
+		"color": "gray"
+	},
+	{
+		"brandName": "Ralph Lauren",
+		"type": "tshirt",
+		"description": "short-sleeve",
+		"gender": "female",
+		"size": "large",
+		"color": "gray"
+	},
+	{
+		"brandName": "Ralph Lauren",
+		"type": "tshirt",
+		"description": "long-sleeve",
+		"gender": "female",
+		"size": "small",
+		"color": "white"
+	},
+	{
+		"brandName": "Ralph Lauren",
+		"type": "tshirt",
+		"description": "long-sleeve",
+		"gender": "female",
+		"size": "medium",
+		"color": "white"
+	},
+	{
+		"brandName": "Ralph Lauren",
+		"type": "tshirt",
+		"description": "long-sleeve",
+		"gender": "female",
+		"size": "large",
+		"color": "white"
+	},
+	{
+		"brandName": "Ralph Lauren",
+		"type": "tshirt",
+		"description": "long-sleeve",
+		"gender": "female",
+		"size": "small",
+		"color": "black"
+	},
+	{
+		"brandName": "Ralph Lauren",
+		"type": "tshirt",
+		"description": "long-sleeve",
+		"gender": "female",
+		"size": "medium",
+		"color": "black"
+	},
+	{
+		"brandName": "Ralph Lauren",
+		"type": "tshirt",
+		"description": "long-sleeve",
+		"gender": "female",
+		"size": "large",
+		"color": "black"
+	},
+	{
+		"brandName": "Ralph Lauren",
+		"type": "tshirt",
+		"description": "long-sleeve",
+		"gender": "female",
+		"size": "small",
+		"color": "gray"
+	},
+	{
+		"brandName": "Ralph Lauren",
+		"type": "tshirt",
+		"description": "long-sleeve",
+		"gender": "female",
+		"size": "medium",
+		"color": "gray"
+	},
+	{
+		"brandName": "Ralph Lauren",
+		"type": "tshirt",
+		"description": "long-sleeve",
+		"gender": "female",
+		"size": "large",
+		"color": "gray"
+	}
+]

@@ -11,8 +11,10 @@ import lombok.EqualsAndHashCode;
 @EqualsAndHashCode(callSuper = true)
 public class Item extends PanacheEntity {
 
-	private String name;
+	private String brandName;
+	private String type;
 	private String description;
+	private String gender;
 	private String size;
 	private String color;
 

@@ -11,9 +11,9 @@ import com.github.dwasinge.inventory.domain.InventoryDetail;
 import com.github.dwasinge.store.commons.domain.InventoryEvent;
 
 @ApplicationScoped
-public class InventoryDetailEventProcessor {
+public class InventoryEventProcessor {
 
-	private Logger logger = LoggerFactory.getLogger(InventoryDetailEventProcessor.class);
+	private Logger logger = LoggerFactory.getLogger(InventoryEventProcessor.class);
 
 	@Inject
 	private InventoryService service;

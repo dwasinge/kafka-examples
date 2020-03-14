@@ -9,6 +9,8 @@ import java.util.concurrent.TimeUnit;
 import javax.enterprise.context.ApplicationScoped;
 
 import org.eclipse.microprofile.reactive.messaging.Outgoing;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 
 import com.github.dwasinge.store.commons.domain.TransactionEvent;
 
@@ -17,6 +19,8 @@ import io.smallrye.reactive.messaging.kafka.KafkaMessage;
 
 @ApplicationScoped
 public class TransactionGenerator {
+
+	private Logger logger = LoggerFactory.getLogger(TransactionGenerator.class);
 
 	private Random random = new Random();
 	private int returnCounter = 0;
@@ -37,15 +41,17 @@ public class TransactionGenerator {
 			BigDecimal total = generateTotalAmount();
 
 			// Arbitrary, but 1 out of every 15 will be a returned item
-			Boolean isDebit = Boolean.FALSE;
+			Boolean isDebit = Boolean.TRUE;
 			returnCounter += 1;
 			if (returnCounter >= 15) {
 				returnCounter = 0;
-				isDebit = Boolean.TRUE;
+				isDebit = Boolean.FALSE;
 			}
 
 			TransactionEvent event = new TransactionEvent(storeId, itemId, quantity, LocalDateTime.now(),
 					LocalDateTime.now(), total, isDebit);
+
+			logger.info("generated transaction event: " + event);
 
 			return KafkaMessage.of(event.getStoreId(), event);
 

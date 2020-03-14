@@ -9,12 +9,12 @@ import lombok.NoArgsConstructor;
 @Data
 @NoArgsConstructor
 @AllArgsConstructor
-public class OrderCreatedAndShippedEvent {
+public class OrderReceivedEvent {
 
 	private Long id;
 	private Integer storeId;
-	private Integer itemId;
-	private Integer quantityShipped;
+	private Integer eventId;
+	private Integer quantityReceived;
 	private LocalDateTime createdDateTime;
-
+	
 }

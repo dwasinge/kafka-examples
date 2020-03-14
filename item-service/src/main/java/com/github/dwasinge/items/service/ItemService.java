@@ -1,5 +1,6 @@
 package com.github.dwasinge.items.service;
 
+import java.util.ArrayList;
 import java.util.List;
 
 import javax.enterprise.context.ApplicationScoped;
@@ -25,6 +26,18 @@ public class ItemService {
 		}
 		
 		throw new WebApplicationException("resource already exists with id '" + item.id + "'", 409);
+
+	}
+
+	public List<Item> create(List<Item> itemList) {
+
+		List<Item> created = new ArrayList<>();
+
+		for(Item item : itemList) {
+			created.add(create(item));
+		}
+
+		return created;
 
 	}
 

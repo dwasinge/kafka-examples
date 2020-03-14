@@ -34,13 +34,6 @@ public class InventoryResource {
 		return Response.status(201).entity(service.createOrUpdate(detailList)).build();
 	}
 
-	@POST
-	@Path("/list/async")
-	public Response postListAsync(List<InventoryDetail> detailList) {
-		service.asyncCreateOrUpdate(detailList);
-		return Response.status(202).build();
-	}
-
 	@GET
 	@Path("/stores/{storeId}/items/{itemId}")
 	public InventoryDetail getByStoreIdAndItemId(@PathParam("storeId") Integer storeId,

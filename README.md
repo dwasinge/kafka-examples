@@ -4,6 +4,8 @@
 
 The examples in this repository represent a simple store domain.  The application consists of a store-service, item-service, inventory-service, transaction-service, and a common events library.  These services will be discussed in detail below.
 
+![high-level-arch.jpg](high-level-arch.jpg)
+
 ## Prerequisites
 
 Currently, the services listed above require a few external prerequisites:

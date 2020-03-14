@@ -1,5 +1,6 @@
 package com.github.dwasinge.store.service;
 
+import java.util.ArrayList;
 import java.util.List;
 
 import javax.enterprise.context.ApplicationScoped;
@@ -33,6 +34,18 @@ public class StoreService {
 		}
 
 		throw new WebApplicationException("resource already exists with id '" + store.getStoreId() + "'", 409);
+	}
+
+	public List<Store> create(List<Store> storeList) {
+
+		List<Store> persistedList = new ArrayList<>();
+	
+		for(Store store: storeList) {
+			persistedList.add(create(store));
+		}
+
+		return persistedList;
+
 	}
 
 	public Store update(Integer id, Store store) {

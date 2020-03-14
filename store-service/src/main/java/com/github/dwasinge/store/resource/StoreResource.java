@@ -30,6 +30,12 @@ public class StoreResource {
 		return Response.status(201).entity(service.create(store)).build();
 	}
 
+	@POST
+	@Path("/list")
+	public Response postList(List<Store> storeList) {
+		return Response.status(201).entity(service.create(storeList)).build();
+	}
+
 	@PUT
 	@Path("/{storeId}")
 	public Store put(@PathParam("storeId") Integer storeId, Store store) {

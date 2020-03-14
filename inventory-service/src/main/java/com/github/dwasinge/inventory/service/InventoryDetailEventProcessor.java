@@ -8,7 +8,7 @@ import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
 import com.github.dwasinge.inventory.domain.InventoryDetail;
-import com.github.dwasinge.inventory.domain.InventoryDetailEvent;
+import com.github.dwasinge.store.commons.domain.InventoryEvent;
 
 @ApplicationScoped
 public class InventoryDetailEventProcessor {
@@ -18,16 +18,41 @@ public class InventoryDetailEventProcessor {
 	@Inject
 	private InventoryService service;
 
-	@Incoming("inventory-detail-events")
-	public void process(InventoryDetailEvent event) {
+	@Incoming("inventory-events")
+	public void process(InventoryEvent event) {
 
-		logger.info("processing inventory event...");
+		logger.info("processing inventory event... " + event);
 
-		service.createOrUpdate(new InventoryDetail(event));
+		// check if detail already exists
+		InventoryDetail existingDetail = service.getByStoreIdAndItemId(event.getStoreId(), event.getItemId());
 
-		logger.info("persisted.");
+		// create new detail
+		InventoryDetail detailToPersist = new InventoryDetail(event);
+
+		if (null != existingDetail) {
+
+			// calc new quantity
+			Integer currentQuantity = existingDetail.getCurrentQuantity();
+			Integer quantityChange = event.getQuantity();
+
+			if (event.getIsDebit()) {
+
+				// subtract new quantity from current quantity
+				Integer newQuantity = currentQuantity - quantityChange;
+				detailToPersist.setCurrentQuantity((newQuantity < 0) ? 0 : newQuantity);
+
+			} else {
+
+				// add new quantity to current quantity
+				Integer newQuantity = currentQuantity + quantityChange;
+				detailToPersist.setCurrentQuantity(newQuantity);
+
+			}
+
+		}
+
+		service.createOrUpdate(detailToPersist);
 
 	}
-	
 
 }

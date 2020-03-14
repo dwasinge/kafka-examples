@@ -32,6 +32,13 @@ public class ItemResource {
 		return Response.status(201).entity(service.create(item)).build();
 	}
 
+	@POST
+	@Transactional
+	@Path("/list")
+	public Response post(List<Item> item) {
+		return Response.status(201).entity(service.create(item)).build();
+	}
+
 	@PUT
 	@Path("/{id}")
 	@Transactional

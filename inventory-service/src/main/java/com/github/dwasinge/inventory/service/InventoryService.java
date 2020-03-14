@@ -8,21 +8,13 @@ import javax.inject.Inject;
 import javax.ws.rs.WebApplicationException;
 
 import com.github.dwasinge.inventory.domain.InventoryDetail;
-import com.github.dwasinge.inventory.domain.InventoryDetailEvent;
 import com.github.dwasinge.inventory.repository.InventoryRepository;
-
-import io.smallrye.reactive.messaging.annotations.Channel;
-import io.smallrye.reactive.messaging.annotations.Emitter;
 
 @ApplicationScoped
 public class InventoryService {
 
 	@Inject
 	private InventoryRepository repository;
-
-	@Inject
-	@Channel("inventory-detail-events")
-	Emitter<InventoryDetailEvent> inventoryDetailEventEmitter;
 
 	public List<InventoryDetail> createOrUpdate(List<InventoryDetail> detailList) {
 
@@ -53,14 +45,6 @@ public class InventoryService {
 		}
 
 		return detail;
-
-	}
-
-	public void asyncCreateOrUpdate(List<InventoryDetail> detailList) {
-
-		for (InventoryDetail detail : detailList) {
-			inventoryDetailEventEmitter.send(new InventoryDetailEvent(detail));
-		}
 
 	}
 

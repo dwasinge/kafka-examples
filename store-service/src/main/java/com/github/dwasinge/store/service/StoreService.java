@@ -9,11 +9,18 @@ import javax.ws.rs.WebApplicationException;
 import com.github.dwasinge.store.domain.Store;
 import com.github.dwasinge.store.repository.StoreRepository;
 
+import io.smallrye.reactive.messaging.annotations.Channel;
+import io.smallrye.reactive.messaging.annotations.Emitter;
+
 @ApplicationScoped
 public class StoreService {
 
 	@Inject
 	private StoreRepository repository;
+
+	@Inject
+	@Channel("store-events")
+	Emitter<Store> storeEventEmitter;
 
 	public Store create(Store store) {
 

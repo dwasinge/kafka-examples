@@ -13,5 +13,6 @@ public class LowInventoryEvent {
 	private Integer itemId;
 	private Integer currentQuantity;
 	private Integer thresholdQuantity;
+	private Integer reserveQuantity;
 
 }

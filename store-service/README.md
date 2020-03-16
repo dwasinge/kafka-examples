@@ -93,11 +93,11 @@ DELETE /stores/{storeId}
 ```
 Store:
 {
-id	ObjectId{...}
-dateClosed	LocalDatestring($date)
-dateOpened	LocalDatestring($date)
-regionId	integer($int32)
-storeId	integer($int32)
+id          ObjectId{...}
+dateClosed  LocalDatestring($date)
+dateOpened  LocalDatestring($date)
+regionId    integer($int32)
+storeId     integer($int32)
 }
 ```
 

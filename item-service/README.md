@@ -94,12 +94,12 @@ DELETE /items/{itemId}
 Item:
 {
 id	        integer($int64)
-brandName	string
-color	    string
-description	string
-gender	    string
-size	    string
-type	    string
+brandName   string
+color       string
+description string
+gender      string
+size        string
+type        string
 }
 ```
 

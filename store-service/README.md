@@ -82,7 +82,7 @@ POST   /stores/list
 GET    /stores/{storeId}
 
 # update store resource by store ID
-PUT    /stores/{storeID}
+PUT    /stores/{storeId}
 
 # delete store resource by store ID
 DELETE /stores/{storeId}

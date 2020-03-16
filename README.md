@@ -2,7 +2,12 @@
 
 ## Overview
 
-The examples in this repository represent a simple store domain.  The application consists of a store-service, item-service, inventory-service, transaction-service, and a common events library.  These services will be discussed in detail below.
+The examples in this repository represent a simple store and inventory domain.  The application consists of a store-service, item-service, inventory-service, transaction-service, and a common events library.  The high level architecture and event flow is shown here.
+
+![high-level-arch.jpg](high-level-arch.jpg)
+
+The description of each of these services can be found in the Services section below.  The in-depth details can be found in the README for each service.
+
 
 ## Prerequisites
 
@@ -37,16 +42,4 @@ The transaction service will automatically generate random sales events to be us
 ### Store Events
 
 This library just contains the Events that will be generated and consumed from the Kafka topics and the associated Kafka Serializer/Deserializers.  These Events and Serializer/Deserializer classes will be reused across services to maintain consistent interfaces.
-
-
-
-store-events -> any created/updated stores
-item-events -> any created/updated items
-inventory-events -> any sales/return transactions or item delivered to store
-
-generators:
-
-low-inventory-generator:     checks for each store/item combination and if more inventory needs to be ordered --> low-inventory-events  
-order-inventory-generator:   low-inventory-events --> group by store and create order and ship to store --> order-shipped-events
-recieve-inventory-generator: order-shipped-events --> receive order and create inventory events --> inventory-events
 

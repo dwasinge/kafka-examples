@@ -15,14 +15,14 @@ The inventory service manages several events and topics.
 #### Consumer
 
 The inventory service is a consumer of the following topics:
-* store-events - processes StoreEvent to add new stores to the inventory data store along with initializing items for the store
-* item-events - processes ItemEvent to add new items to the existing stores inventory
-* inventory-events - processes InventoryEvent to increment or decrement item counts for a given store
+* `store-events` - processes StoreEvent to add new stores to the inventory data store along with initializing items for the store
+* `item-events` - processes ItemEvent to add new items to the existing stores inventory
+* `inventory-events` - processes InventoryEvent to increment or decrement item counts for a given store
 
 #### Producer
 
 The inventory service is producer to the following topics:
-* low-inventory-events - publishes a LowInventoryEvent to the topic if the current quantity of an item is lower than the defined threshold
+* `low-inventory-events` - publishes a LowInventoryEvent to the topic if the current quantity of an item is lower than the defined threshold
 
 ## How do I use it?
 

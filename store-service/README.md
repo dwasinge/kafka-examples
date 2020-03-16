@@ -67,11 +67,11 @@ To access the application, open the following link in your browser:
 
 Swagger UI can be accessed with the following link:
 
-`http://localhost:8080/swagger-ui.html`
+`http://localhost:8080/swagger-ui/`
 
 ### Exposed Endpoints
 
-All exposed endpoints and Models can be found using the [swagger api documentation](http://localhost:8080/v2/api-docs) or the [swagger-ui page](http://localhost:8080/swagger-ui.html).
+All exposed endpoints and Models can be found using the [swagger api documentation](http://localhost:8080/openapi) or the [swagger-ui page](http://localhost:8080/swagger-ui/).
 
 The current endpoints are as follows:
 ```

@@ -4,11 +4,11 @@
 
 The Store service uses [Quarkus](https://quarkus.io) and is used to manage store resources. It exposes a REST API that exposes the standard CRUD operations for store resources.
 
-## Data Store
+### Data Store
 
 The service is configured to use [Mongo](https://www.mongodb.com/) as its data store.
 
-## Kafka Topic
+### Kafka Topic
 
 When a store resource has been created or modified, a StoreEvent will be created and published to the store-events topic in the Kafka instance or cluster.  The inventory service is the consumer of this topic.
 
@@ -16,25 +16,23 @@ When a store resource has been created or modified, a StoreEvent will be created
 
 ### Prerequisites
 
-Java 8
-
-Apache Maven
-
-Docker (if using for Mongo)
-
-A running Mongo instance
+* Java 8
+* Apache Maven
+* Docker (if using for Mongo)
+* A running Mongo instance
 
 #### Starting Mongo using Docker
 
 Assuming docker is installed, run the following command:
-
-
-`docker run --name store-mongo -p 27017:27017 -d mongo`
+```
+docker run --name store-mongo -p 27017:27017 -d mongo
+```
 
 
 ### Build the application using Maven
-
-`mvn clean install`
+```
+mvn clean install
+```
 
 ### Running the application in dev mode
 
@@ -65,15 +63,15 @@ If you want to learn more about building native executables, please consult http
 
 To access the application, open the following link in your browser:
 
-`http://localhost:9999`
+`http://localhost:8080`
 
 Swagger UI can be accessed with the following link:
 
-`http://localhost:9999/swagger-ui.html`
+`http://localhost:8080/swagger-ui.html`
 
 ### Exposed Endpoints
 
-All exposed endpoints and Models can be found using the [swagger api documentation](http://localhost:9999/v2/api-docs) or the [swagger-ui page](http://localhost:9999/swagger-ui.html).
+All exposed endpoints and Models can be found using the [swagger api documentation](http://localhost:8080/v2/api-docs) or the [swagger-ui page](http://localhost:8080/swagger-ui.html).
 
 The current endpoints are as follows:
 ```

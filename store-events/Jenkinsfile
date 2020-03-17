@@ -117,10 +117,7 @@ pipeline{
                         sh 'printenv'
 
                         echo '### Running tests ###'
-                        sh 'cd ${APP_NAME}'
-                        sh 'ls -la'
-                        sh 'ls -la ${APP_NAME}'
-                        sh './mvnw clean test'
+                        sh 'mvn -f ${APP_NAME}/pom.xml clean test'
                     }
                 }
                 stage("Build Project"){

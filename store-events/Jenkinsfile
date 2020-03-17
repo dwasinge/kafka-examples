@@ -118,7 +118,8 @@ pipeline{
 
                         echo '### Running tests ###'
                         sh 'cd ${APP_NAME}'
-                        sh 'pwd'
+                        sh 'ls -la'
+                        sh 'ls -la ${APP_NAME}
                         sh './mvnw clean test'
                     }
                 }

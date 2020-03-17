@@ -117,6 +117,8 @@ pipeline{
                         sh 'printenv'
 
                         echo '### Running tests ###'
+                        sh 'cd ${APP_NAME}'
+                        sh 'pwd'
                         sh './mvnw clean test'
                     }
                 }

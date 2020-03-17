@@ -11,7 +11,7 @@ pipeline{
         NAMESPACE_PREFIX="dw"
 
         PIPELINES_NAMESPACE = "${NAMESPACE_PREFIX}-ci-cd"
-        APP_NAME = "transaction-service"
+        APP_NAME = "store-events"
 
         JENKINS_TAG = "${JOB_NAME}.${BUILD_NUMBER}".replace("/", "-")
         JOB_NAME = "${JOB_NAME}".replace("/", "-")

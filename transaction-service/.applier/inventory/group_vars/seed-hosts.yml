@@ -1,0 +1,59 @@
+---
+ci_cd_namespace: dw-ci-cd
+dev_namespace: dw-dev
+test_namespace: dw-test
+app_name: transaction-service
+
+build_vars:
+  NAME: '{{ app_name }}'
+  GIT_URL: https://github.com/dwasinge/kafka-examples.git
+  GIT_REF: master
+  OUTPUT_IMAGE_NAME: '{{ app_name }}'
+  OUTPUT_IMAGE_TAG: latest
+  BUILDER_IMAGE_NAME: registry.access.redhat.com/fuse7/fuse-java-openshift
+  BUILDER_IMAGE_TAG: 1.5
+
+pipeline_vars:
+  PIPELINE_SOURCE_REPOSITORY_URL: https://github.com/dwasinge/kafka-examples.git
+  PIPELINE_SOURCE_REPOSITORY_REF: master
+  PIPELINE_CONTEXT_DIR: '{{app_name}}'
+  NAME: '{{ app_name }}'
+
+dev_vars:
+  NAME: '{{ app_name }}'
+  IMAGE_NAME: '{{ app_name }}'
+  IMAGE_TAG: latest
+
+test_vars:
+  NAME: '{{ app_name }}'
+  IMAGE_NAME: '{{ app_name }}'
+  IMAGE_TAG: latest
+
+openshift_cluster_content:
+- object: '{{ app_name }}'
+  content:
+  - name: pipeline
+    template: 'https://raw.githubusercontent.com/redhat-cop/openshift-templates/v1.4.15/jenkins-pipelines/jenkins-pipeline-template-with-ocp-triggers.yml'
+    params_from_vars: '{{ pipeline_vars }}'
+    namespace: '{{ ci_cd_namespace }}'
+    tags: 
+    - pipeline
+  - name: build
+    template: '{{ inventory_dir }}/../templates/build.yml'
+    params_from_vars: '{{ build_vars }}'
+    tags:
+      - build
+  - name: deployment
+    template: '{{ inventory_dir }}/../templates/deploy.yml'
+    params_from_vars: '{{ dev_vars }}'
+    namespace: '{{ dev_namespace }}'
+    tags:
+      - deploy
+      - dev
+  - name: deployment
+    template: '{{ inventory_dir }}/../templates/deploy.yml'
+    params_from_vars: '{{ test_vars }}'
+    namespace: '{{ test_namespace }}'
+    tags:
+      - deploy
+      - test

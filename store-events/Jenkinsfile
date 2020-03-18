@@ -23,6 +23,8 @@ pipeline{
         ARTIFACTID = pom.getArtifactId();
         VERSION = pom.getVersion();
 
+        MVN_SNAPSHOT_DEPLOYMENT_REPOSITORY = "nexus::default::http://nexus:8081/repository/maven-snapshots"
+
         RELEASE = false
     }
 
@@ -146,7 +148,7 @@ pipeline{
                     }
                     steps{
                         echo '### Running deploy ###'
-                        sh 'mvn -f ${APP_NAME}/pom.xml deploy'
+                        sh 'mvn -f ${APP_NAME}/pom.xml -DaltDeploymentRepository=${MVN_SNAPSHOT_DEPLOYMENT_REPOSITORY} deploy'
                     }
                     // Post can be used both on individual stages and for the entire build.
                     post {

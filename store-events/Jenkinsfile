@@ -114,56 +114,13 @@ pipeline{
                         }
                     }
                 }
-                stage("Test Project"){
-                    steps {
-                        echo '### Running tests ###'
-                        sh 'mvn -f ${APP_NAME}/pom.xml clean test'
-                    }
-                }
-                stage("Build Project"){
-                    steps{
-                        echo '### Running install ###'
-                        sh 'mvn -f ${APP_NAME}/pom.xml clean install'
-                    }
-                }
-                stage("Static Analysis"){
-                    steps{
-                        echo '### Maven Static Code Analysis ###'
-                        sh 'mvn -f ${APP_NAME}/pom.xml checkstyle:checkstyle'
-                        sh 'mvn -f ${APP_NAME}/pom.xml org.jacoco:jacoco-maven-plugin:prepare-agent install -Dmaven.test.failure.ignore=true'
-                        
-            
-                    }
-                }
-//                stage("Sonar Quality Gate"){
-//                    steps {
-//                        timeout(time: 1, unit: 'HOURS') {
-//                            waitForQualityGate abortPipeline: false
-//                        }
-//                    }
-//                }
-                stage("Deploy to Nexus"){
+                stage("Build and Deploy to Nexus"){
                     when {
                         expression { currentBuild.result != 'UNSTABLE' }
                     }
                     steps{
-                        echo '### Running deploy ###'
-                        sh 'mvn -f ${APP_NAME}/pom.xml -DaltDeploymentRepository=${MVN_SNAPSHOT_DEPLOYMENT_REPOSITORY} deploy'
-                    }
-                    // Post can be used both on individual stages and for the entire build.
-                    post {
-                        always{
-                            archive "**"
-                            junit testResults: '**/target/surefire-reports/TEST-*.xml'
-
-                            // Notify slack or some such
-                        }
-                        success {
-                            echo "SUCCESS"
-                        }
-                        failure {
-                            echo "FAILURE"
-                        }
+                        echo '### Running build and deploy ###'
+                        sh 'mvn -f ${APP_NAME}/pom.xml -DaltDeploymentRepository=${MVN_SNAPSHOT_DEPLOYMENT_REPOSITORY} clean deploy'
                     }
                 }
             }

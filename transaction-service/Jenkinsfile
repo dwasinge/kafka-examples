@@ -117,7 +117,7 @@ pipeline{
                         sh 'printenv'
 
                         echo '### Running tests ###'
-                        sh './mvnw clean test'
+                        sh './${APP_NAME}/mvnw clean test'
                     }
                 }
                 stage("Build Project"){

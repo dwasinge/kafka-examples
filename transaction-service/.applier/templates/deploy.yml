@@ -33,18 +33,6 @@ objects:
       spec:
         containers:
         - env:
-          - name: MP_JWT_VERIFY_PUBLICKEY_LOCATION
-            value: "${JWT_PUBLIC_KEY_URL}"
-          - name: TRUSTED_CLIENT_KEY
-            valueFrom:
-              secretKeyRef:
-                name: omp-gitlab-configuration
-                key: TRUSTED_CLIENT_KEY
-          - name: CONFIG_REPOSITORY_ID
-            valueFrom:
-              secretKeyRef:
-                name: omp-gitlab-configuration
-                key: CONFIG_REPOSITORY_ID
           image: "${IMAGE_NAME}:${IMAGE_TAG}"
           imagePullPolicy: Always
           name: "${NAME}"
@@ -113,7 +101,4 @@ parameters:
   required: true
 - name: IMAGE_TAG
   description: The tag of the image to deploy
-  required: true
-- name: JWT_PUBLIC_KEY_URL
-  description: A URL that resolves to the public key that can be used to verify tokens received from clients
   required: true

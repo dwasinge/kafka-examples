@@ -18,7 +18,7 @@ pipeline{
 
         DISPLAY = 0
 
-        pom = readMavenPom file: '${APP_NAME}/pom.xml'
+        pom = readMavenPom file: "${APP_NAME}/pom.xml"
 
         ARTIFACTID = pom.getArtifactId();
         VERSION = pom.getVersion();

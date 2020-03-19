@@ -103,42 +103,70 @@ pipeline{
                 }
             }
             stages{
-                stage("Print ArtifactID and Version"){
-                    steps{
-                        script{
-                            // Arbitrary Groovy Script executions can do in script tags
-                            echo "Version ::: ${VERSION}"
-                            echo "artifactId ::: ${ARTIFACTID}"
+                dir("${APP_NAME}") {
+                    stage("Print ArtifactID and Version"){
+                        steps{
+                            script{
+                                // Arbitrary Groovy Script executions can do in script tags
+                                echo "Version ::: ${VERSION}"
+                                echo "artifactId ::: ${ARTIFACTID}"
+                            }
+                        }
+                    }
+                    stage("Test Project"){
+                        steps {
+                            echo '### Running tests ###'
+                            sh './mvnw clean test'
+                        }
+                    }
+                    stage("Build Project"){
+                        steps{
+                            echo '### Running install ###'
+                            sh './mvnw clean install -DskipTests'
+                        }
+                    }
+                    stage("Post Build Steps") {
+                        steps{
+                            echo 'archiving and reporting test results'
+                        }
+                        post {
+                            always{
+                                archive "**"
+                                junit testResults: '**/target/surefire-reports/TEST-*.xml'
+    
+                                // Notify slack or some such
+                            }
+                            success {
+                                echo "SUCCESS"
+                            }
+                            failure {
+                                echo "FAILURE"
+                            }
+                        }
+                    }
+                    stage("Start Openshift Build"){
+                        when {
+                            expression { currentBuild.result != 'UNSTABLE' }
+                        }
+                        steps{
+                            echo '### Create Linux Container Image from package ###'
+                            sh  '''
+                                oc project ${PIPELINES_NAMESPACE} # probs not needed
+                                oc patch bc ${APP_NAME} -p "{\\"spec\\":{\\"output\\":{\\"to\\":{\\"kind\\":\\"ImageStreamTag\\",\\"name\\":\\"${APP_NAME}:${JENKINS_TAG}\\"}}}}"
+                                oc start-build ${APP_NAME} --from-file=target/${ARTIFACTID}-${VERSION}-runner.jar --follow
+                            '''
                         }
                     }
                 }
-                stage("Test Project"){
-                    steps {
-                        sh 'printenv'
-
-                        echo '### Running tests ###'
-                        dir("${APP_NAME}") {
-                            sh './mvnw -X clean test'
-                        }
-                    }
-                }
-                stage("Build Project"){
-                    steps{
-                        echo '### Running install ###'
-                        dir("${APP_NAME}") {
-                            sh './mvnw clean install'
-                        }
-                    }
-                }
-                stage("Static Analysis"){
-                    steps{
-                        echo '### Maven Static Code Analysis ###'
-                        dir("${APP_NAME}") {
-                            sh './mvnw checkstyle:checkstyle'
-                            sh './mvnw org.jacoco:jacoco-maven-plugin:prepare-agent install -Dmaven.test.failure.ignore=true'
-                        }
-                    }
-                }
+//                stage("Static Analysis"){
+//                    steps{
+//                        echo '### Maven Static Code Analysis ###'
+//                        dir("${APP_NAME}") {
+//                            sh './mvnw checkstyle:checkstyle'
+//                            sh './mvnw org.jacoco:jacoco-maven-plugin:prepare-agent install -Dmaven.test.failure.ignore=true'
+//                        }
+//                    }
+//                }
 //                stage("Sonar Quality Gate"){
 //                    steps {
 //                        timeout(time: 1, unit: 'HOURS') {
@@ -146,44 +174,15 @@ pipeline{
 //                        }
 //                    }
 //                }
-                stage("Deploy to Nexus"){
-                    when {
-                        expression { currentBuild.result != 'UNSTABLE' }
-                    }
-                    steps{
-                        echo '### Running deploy ###'
+//                stage("Deploy to Nexus"){
+//                    when {
+//                        expression { currentBuild.result != 'UNSTABLE' }
+//                    }
+//                    steps{
+//                        echo '### Running deploy ###'
 //                        sh './mvnw deploy'
-//
-                    }
-                    // Post can be used both on individual stages and for the entire build.
-                    post {
-                        always{
-                            archive "**"
-                            junit testResults: '**/target/surefire-reports/TEST-*.xml'
-
-                            // Notify slack or some such
-                        }
-                        success {
-                            echo "SUCCESS"
-                        }
-                        failure {
-                            echo "FAILURE"
-                        }
-                    }
-                }
-                stage("Start Openshift Build"){
-                    when {
-                        expression { currentBuild.result != 'UNSTABLE' }
-                    }
-                    steps{
-                        echo '### Create Linux Container Image from package ###'
-                        sh  '''
-                                oc project ${PIPELINES_NAMESPACE} # probs not needed
-                                oc patch bc ${APP_NAME} -p "{\\"spec\\":{\\"output\\":{\\"to\\":{\\"kind\\":\\"ImageStreamTag\\",\\"name\\":\\"${APP_NAME}:${JENKINS_TAG}\\"}}}}"
-                                oc start-build ${APP_NAME} --from-file=target/${ARTIFACTID}-${VERSION}-runner.jar --follow
-                            '''
-                    }
-                }
+//                    }
+//                }
             }
         }
         stage("Openshift Deployment") {

@@ -7,7 +7,7 @@ app_name: transaction-service
 build_vars:
   NAME: '{{ app_name }}'
   GIT_URL: https://github.com/dwasinge/kafka-examples.git
-  GIT_REF: master
+  GIT_REF: develop
   OUTPUT_IMAGE_NAME: '{{ app_name }}'
   OUTPUT_IMAGE_TAG: latest
   BUILDER_IMAGE_NAME: registry.access.redhat.com/fuse7/fuse-java-openshift
@@ -15,7 +15,7 @@ build_vars:
 
 pipeline_vars:
   PIPELINE_SOURCE_REPOSITORY_URL: https://github.com/dwasinge/kafka-examples.git
-  PIPELINE_SOURCE_REPOSITORY_REF: master
+  PIPELINE_SOURCE_REPOSITORY_REF: develop
   PIPELINE_CONTEXT_DIR: '{{app_name}}'
   NAME: '{{ app_name }}'
 

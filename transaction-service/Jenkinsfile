@@ -102,8 +102,8 @@ pipeline{
                     label "jenkins-slave-mvn"
                 }
             }
-            stages{
-                dir("${APP_NAME}") {
+            dir("${APP_NAME}") {
+                stages{
                     stage("Print ArtifactID and Version"){
                         steps{
                             script{
@@ -133,7 +133,6 @@ pipeline{
                             always{
                                 archive "**"
                                 junit testResults: '**/target/surefire-reports/TEST-*.xml'
-    
                                 // Notify slack or some such
                             }
                             success {
@@ -158,6 +157,8 @@ pipeline{
                         }
                     }
                 }
+            }
+        }
 //                stage("Static Analysis"){
 //                    steps{
 //                        echo '### Maven Static Code Analysis ###'
@@ -183,8 +184,6 @@ pipeline{
 //                        sh './mvnw deploy'
 //                    }
 //                }
-            }
-        }
         stage("Openshift Deployment") {
             agent {
                 node {

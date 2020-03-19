@@ -134,9 +134,11 @@ pipeline{
                     }
                     post {
                         always{
-                            archive "**"
-                            junit testResults: '**/target/surefire-reports/TEST-*.xml'
-                            // Notify slack or some such
+                            dir("${APP_NAME}") {
+                                archive "**"
+                                junit testResults: '**/target/surefire-reports/TEST-*.xml'
+                                // Notify slack or some such
+                            }
                         }
                         success {
                             echo "SUCCESS"

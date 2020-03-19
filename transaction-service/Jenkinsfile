@@ -124,7 +124,7 @@ pipeline{
                     steps{
                         echo '### Running install ###'
                         dir("${APP_NAME}") {
-                            sh './mvnw clean install -DskipTests'
+                            sh './mvnw install -DskipTests'
                         }
                     }
                 }
@@ -134,11 +134,9 @@ pipeline{
                     }
                     post {
                         always{
-                            dir("${APP_NAME}") {
-                                archive "**"
-                                junit testResults: '**/target/surefire-reports/TEST-*.xml'
-                                // Notify slack or some such
-                            }
+                            archive "**"
+                            junit testResults: '**/target/surefire-reports/TEST-*.xml'
+                            // Notify slack or some such
                         }
                         success {
                             echo "SUCCESS"
